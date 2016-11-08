@@ -23,7 +23,7 @@ auth = OtpAuth('JBSWY3DPEHPK3PXP')  # Moet 16 lang zijn
 s = auth.to_uri('totp', 'Jelle Huisman', 'NS Fietsenstalling')
 import qrcode
 img = qrcode.make(s)
-#img.show()
+img.show()
 controle = auth.valid_totp(int(input('Voer code in')))
 
 print(controle)

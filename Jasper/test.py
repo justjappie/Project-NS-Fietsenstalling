@@ -23,6 +23,3 @@ root.mainloop()
 
 fietsnr = 1
 pincode = 1
-
-def inlog:
-    if fietsnr == invoer_fietsnr.get() and pincode.get == invoer_pin.get()

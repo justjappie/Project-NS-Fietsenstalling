@@ -29,3 +29,14 @@ class fietsstallen():
                 # functie controle_otp toekennen
             else:
                 print("incorrect")
+
+def check_login(db, username, password):
+    """returns True if password matches stored"""
+    cursor = db.cursor()
+    pass1 = db.crypt(password)
+    cursor.execute("SELECT password FROM users WHERE nick=?", (username,))
+    passcheck = cursor.fetchone()
+    if passcheck == pass1:
+        return True
+    else:
+        return False

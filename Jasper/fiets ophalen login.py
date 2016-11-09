@@ -16,7 +16,7 @@ class LoginFrame(Frame):
         doorgaan = Button(self, text="doorgaan", command = self._login_btn_clicked)
         doorgaan.grid(columnspan=2)
 
-
+        
 
         def _login_btn_clicked(self):
             # print("Clicked")
